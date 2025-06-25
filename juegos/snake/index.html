@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Snake</title>
-  <style>
-    body {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      font-family: monospace;
-    }
-    canvas {
-      border: 2px solid white;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #181818;
+            color: #fafafa;
+            font-family: monospace, Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 32px;
+            font-size: 2.5em;
+        }
+        #gameContainer {
+            margin: 30px auto 0 auto;
+            width: 420px;
+            background: #222;
+            border-radius: 12px;
+            box-shadow: 0 2px 14px #000a;
+            padding: 20px;
+        }
+        canvas {
+            background: #10151a;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #444;
+            border-radius: 6px;
+        }
+        #score {
+            font-size: 1.5em;
+            margin: 20px 0 0 0;
+        }
+        #gameOver {
+            color: #ff5252;
+            font-size: 1.7em;
+            margin: 20px 0 0 0;
+            display: none;
+        }
+        #restartBtn {
+            margin: 18px 0 0 0;
+            padding: 11px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            background: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+        #backBtn {
+            margin-top: 30px;
+            background: #222;
+            color: #ccc;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 18px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        #backBtn:hover {
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <h1>🐍 Snake Game</h1>
-  <canvas id="game" width="400" height="400"></canvas>
-  <script src="snake.js"></script>
+    <h1>🐍 Snake</h1>
+    <div id="gameContainer">
+        <canvas id="game" width="400" height="400"></canvas>
+        <div id="score">Puntaje: 0</div>
+        <div id="gameOver">¡Game Over!</div>
+        <button id="restartBtn">Reiniciar</button>
+    </div>
+    <button id="backBtn" onclick="window.location.href='../../index.html'">⬅ Volver</button>
+    <script src="snake.js"></script>
 </body>
 </html>
