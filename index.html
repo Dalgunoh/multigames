@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>🎮 Multigames</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #0f0;
-      font-size: 1.2em;
-    }
-    a:hover {
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Multigames</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #222;
+            padding: 30px 40px 40px 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px #0008;
+        }
+        h1 {
+            text-align: center;
+        }
+        .games-list {
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+        }
+        .games-list li {
+            margin-bottom: 16px;
+        }
+        .games-list a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .games-list a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-  <h1>🎮 Multigames</h1>
-  <p>¡Elige un juego para empezar!</p>
-  <ul>
-    <li><a href="juegos/snake/index.html">🐍 Jugar Snake</a></li>
-    <li><a href="juegos/chess/index.html">🐍 Jugar Snake</a></li>
-    <li><a href="juegos/flopybird/index.html">🐍 Jugar Snake</a></li>
-    <li><a href="juegos/tetris/index.html">🐍 Jugar Snake</a></li>
-    <li><a href="juegos/airattack/index.html">🐍 Jugar Snake</a></li>
-    <li><a href="juegos/marioworld/index.html">🐍 Jugar Snake</a></li>
-    <!-- Agrega aquí más juegos -->
-  </ul>
+    <div class="container">
+        <h1>🎮 Multigames</h1>
+        <p>Bienvenido a Multigames. Selecciona un juego para comenzar:</p>
+        <ul class="games-list">
+            <li>
+                <a href="juegos/snake/index.html">🐍 Snake</a>
+            </li>
+            <!-- Puedes agregar más juegos aquí -->
+        </ul>
+        <div class="footer">
+            &copy; 2025 Multigames
+        </div>
+    </div>
 </body>
 </html>
